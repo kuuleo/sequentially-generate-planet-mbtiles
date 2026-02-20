@@ -128,7 +128,6 @@ func formatBoundingBox(minX, minY, maxX, maxY float64) string {
 }
 
 func getExtent(filePath, ogrContainerName string) (minX, minY, maxX, maxY float64, err error) {
-
 	ap, err := filepath.Abs(filePath)
 	if err != nil {
 		return 0, 0, 0, 0, err
