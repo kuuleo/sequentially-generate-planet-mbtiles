@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/docker"
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/system"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/docker"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/system"
 )
 
 type containers struct {

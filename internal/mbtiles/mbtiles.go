@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/docker"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/docker"
 )
 
 func Generate(src, dst, coastline, landcover, config, process string, outAsDir bool, tilemaker *docker.Container, elg, plg, rlg *log.Logger) {

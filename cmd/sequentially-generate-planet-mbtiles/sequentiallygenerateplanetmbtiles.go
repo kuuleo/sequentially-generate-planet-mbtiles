@@ -13,10 +13,10 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/extract"
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/mbtiles"
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/planet"
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/system"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/extract"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/mbtiles"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/planet"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/system"
 )
 
 const (
@@ -198,7 +198,7 @@ Your carriage awaits you at: ` + out + "\n")
 		fmt.Printf("TRY: docker run --rm -it -v %s:/data -p 8080:80 maptiler/tileserver-gl\n\n", filepath.Dir(out))
 		fmt.Print("REMEMBER: To view the map with proper styles, you may need to set up a frontend with something like Maplibre or Leaflet.js using the correct style.json, rather than using the tileserver-gl's inbuilt 'Viewer'; although the viewer is great for checking that the mbtiles work and you got the area you were expecting.\n\n")
 	}
-	fmt.Print("We would love to make this process as easy and reliable as possible for everyone. If you have any feedback, suggestions, or bug reports please come over to https://github.com/lambdajack/sequentially-generate-planet-mbtiles and let us know.\n\n")
+	fmt.Print("We would love to make this process as easy and reliable as possible for everyone. If you have any feedback, suggestions, or bug reports please come over to https://github.com/kuuleo/sequentially-generate-planet-mbtiles and let us know.\n\n")
 }
 
 func cfgCompare(lgInitStr string) {

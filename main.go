@@ -4,7 +4,7 @@ import (
 	_ "embed"
 	"os"
 
-	sequentiallygenerateplanetmbtiles "github.com/lambdajack/sequentially-generate-planet-mbtiles/cmd/sequentially-generate-planet-mbtiles"
+	sequentiallygenerateplanetmbtiles "github.com/kuuleo/sequentially-generate-planet-mbtiles/cmd/sequentially-generate-planet-mbtiles"
 )
 
 //go:embed build/osmium/Dockerfile

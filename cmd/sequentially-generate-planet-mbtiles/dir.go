@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/system"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/system"
 )
 
 type paths struct {
@@ -26,7 +26,6 @@ type paths struct {
 var pth = paths{}
 
 func initDirStructure() {
-
 	tmp, err := os.MkdirTemp(os.TempDir(), "*")
 	if err != nil {
 		log.Printf("Unable to create temp dir: %s", err)

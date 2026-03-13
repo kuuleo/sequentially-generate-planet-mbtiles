@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/docker"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/docker"
 )
 
 func Generate(src, dst string, tippecanoe *docker.Container, elg, plg, rlg *log.Logger) string {

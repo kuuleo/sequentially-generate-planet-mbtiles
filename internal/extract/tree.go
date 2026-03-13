@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/docker"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/docker"
 )
 
 func TreeSlicer(src, dstDir, workingDir string, targetSize uint64, gdal, osmium *docker.Container, elg, plg, rlg *log.Logger) {

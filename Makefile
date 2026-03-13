@@ -1,5 +1,5 @@
 VERSION := v3.1.0
-LDF := "-X github.com/lambdajack/sequentially-generate-planet-mbtiles/cmd/sequentially-generate-planet-mbtiles.sgpmVersion=$(VERSION)"
+LDF := "-X github.com/kuuleo/sequentially-generate-planet-mbtiles/cmd/sequentially-generate-planet-mbtiles.sgpmVersion=$(VERSION)"
 
 all: clean darwin linux windows
 

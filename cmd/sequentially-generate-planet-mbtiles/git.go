@@ -4,8 +4,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/git"
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/system"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/git"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/system"
 )
 
 type repos struct {
@@ -21,23 +21,23 @@ var gh repos
 func cloneRepos() {
 	gh = repos{
 		gdal: git.Repo{
-			Url: "https://github.com/Audiotape-2/gdal",
+			Url: "https://github.com/OSGeo/gdal",
 			Dst: filepath.Join(pth.temp, "gdal"),
 		},
 		osmiumTool: git.Repo{
-			Url: "https://github.com/lambdajack/osmium-tool",
+			Url: "https://github.com/osmcode/osmium-tool",
 			Dst: filepath.Join(pth.temp, "osmium", "osmium-tool"),
 		},
 		libosmium: git.Repo{
-			Url: "https://github.com/lambdajack/libosmium",
+			Url: "https://github.com/osmcode/libosmium",
 			Dst: filepath.Join(pth.temp, "osmium", "libosmium"),
 		},
 		tilemaker: git.Repo{
-			Url: "https://github.com/lambdajack/tilemaker",
+			Url: "https://github.com/systemed/tilemaker",
 			Dst: filepath.Join(pth.temp, "tilemaker"),
 		},
 		tippecanoe: git.Repo{
-			Url: "https://github.com/lambdajack/tippecanoe",
+			Url: "https://github.com/mapbox/tippecanoe",
 			Dst: filepath.Join(pth.temp, "tippecanoe"),
 		},
 	}

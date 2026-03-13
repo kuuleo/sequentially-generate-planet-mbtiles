@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/lambdajack/sequentially-generate-planet-mbtiles/internal/docker"
+	"github.com/kuuleo/sequentially-generate-planet-mbtiles/internal/docker"
 )
 
 func Extract(src, dst, bbox string, osmium *docker.Container) (string, error) {
