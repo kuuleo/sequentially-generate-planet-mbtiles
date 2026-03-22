@@ -2,7 +2,7 @@ FROM debian:bookworm-slim as builder
 
 RUN apt-get update
 RUN apt-get update && apt-get install -y \
-    libosmium2-dev libprotozero-dev libboost-program-options-dev libbz2-dev zlib1g-dev liblz4-dev libexpat1-dev cmake pandoc build-essential libgomp1
+    libosmium2-dev libprotozero-dev libboost-program-options-dev libbz2-dev zlib1g-dev liblz4-dev libexpat1-dev cmake pandoc build-essential libgomp1 apt-utils libgeos-dev libgdal-dev gdal-bin nlohmann-json3-dev
 
 RUN mkdir /var/install
 WORKDIR /var/install
