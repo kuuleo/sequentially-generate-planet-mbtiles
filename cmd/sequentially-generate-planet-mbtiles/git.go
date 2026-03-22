@@ -37,7 +37,7 @@ func cloneRepos() {
 			Dst: filepath.Join(pth.temp, "tilemaker"),
 		},
 		tippecanoe: git.Repo{
-			Url: "https://github.com/mapbox/tippecanoe",
+			Url: "https://github.com/felt/tippecanoe",
 			Dst: filepath.Join(pth.temp, "tippecanoe"),
 		},
 	}
