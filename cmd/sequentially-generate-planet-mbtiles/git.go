@@ -33,11 +33,11 @@ func cloneRepos() {
 			Dst: filepath.Join(pth.temp, "osmium", "libosmium"),
 		},
 		tilemaker: git.Repo{
-			Url: "https://github.com/systemed/tilemaker",
+			Url: "https://github.com/kuuleo/tilemaker",
 			Dst: filepath.Join(pth.temp, "tilemaker"),
 		},
 		tippecanoe: git.Repo{
-			Url: "https://github.com/felt/tippecanoe",
+			Url: "https://github.com/kuuleo/tippecanoe",
 			Dst: filepath.Join(pth.temp, "tippecanoe"),
 		},
 	}
